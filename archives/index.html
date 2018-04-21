@@ -264,9 +264,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/03/About/" itemprop="url">
+            <a class="post-title-link" href="/2018/03/a_target/" itemprop="url">
               
-                <span itemprop="name">pageAbout</span>
+                <span itemprop="name">定个小目标</span>
               
             </a>
         
@@ -274,7 +274,7 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-17T20:24:20+08:00"
+              datetime="2018-03-17T20:31:39+08:00"
               content="2018-03-17" >
           03-17
         </time>
@@ -425,11 +425,36 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
 
           </nav>
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/errore" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:123zdcc@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -627,6 +652,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'dh77BriktY7ABSmKLVhmhmzH-gzGzoHsz',
+        appKey: 'fBAwYjTWyoUBFWSpuMWkTJ5U',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
